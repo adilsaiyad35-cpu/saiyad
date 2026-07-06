@@ -312,3 +312,50 @@ header{
         margin-right: 10px;
     }
 }
+@media (max-width: 768px){
+    header{
+        padding: 12px 5%;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 100px;
+    }
+    .navbar{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .navbar a{
+        padding: 8px 12px;
+        margin: 3px;
+        font-size: 14px;
+    }
+    .icon i{
+        height: 38px;
+        width: 38px;
+        margin-right: 8px;
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    body{
+        padding-top: 220px; /* header do lines mein aane se height badh gayi */
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        padding: 10px 4%;
+    }
+    .logo{
+        width: 80px;
+    }
+    .navbar a{
+        padding: 6px 10px;
+        font-size: 13px;
+        margin: 2px;
+    }
+    body{
+        padding-top: 240px;
+    }
+}
