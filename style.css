@@ -359,3 +359,72 @@ header{
         padding-top: 240px;
     }
 }
+/* logo ka size fix */
+.logo{
+    width: 130px;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* hamburger button - desktop pe hidden */
+.menu-toggle{
+    display: none;
+    font-size: 26px;
+    color: #334155;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    .menu-toggle{
+        display: block;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 90px;          /* header ki height ke hisaab se adjust karo */
+        left: 0;
+        width: 100%;
+        background: #caf9b5;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s ease;
+    }
+
+    .navbar.active{
+        max-height: 400px;   /* menu open hone par height */
+    }
+
+    .navbar a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    header{
+        padding: 12px 5%;
+        flex-wrap: nowrap;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px){
+    .logo{
+        width: 100px;
+    }
+    .icon i{
+        height: 36px;
+        width: 36px;
+        font-size: 16px;
+        margin-right: 8px;
+        margin-left: 5px;
+    }
+}
