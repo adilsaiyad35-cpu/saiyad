@@ -18,3 +18,9 @@ setInterval(() => {
     }, 500);
 
 }, 10000); // 10 seconds
+const menuToggle = document.getElementById('menuToggle');
+const navbar = document.querySelector('.navbar');
+
+menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
