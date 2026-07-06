@@ -261,3 +261,54 @@ header{
 .contact-detail{
     padding: 10px;
 }
+@media (max-width: 992px){
+    header{
+        padding: 15px 5%;
+    }
+    .navbar{
+        display: none; /* replace with toggle menu via JS */
+    }
+    body{
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 768px){
+    .about{
+        flex-direction: column;
+        padding: 50px 5%;
+        text-align: center;
+    }
+    .about-img img{
+        height: 250px;
+    }
+    .about-content{
+        max-width: 100%;
+    }
+    .products{
+        gap: 15px;
+    }
+    .product-card{
+        width: 90%;
+        max-width: 320px;
+    }
+    .contact{
+        padding: 50px 5%;
+    }
+}
+
+@media (max-width: 480px){
+    :root{
+        --big-font: 2rem;
+        --h2-font: 1.4rem;
+    }
+    .navbar a{
+        padding: 8px 15px;
+        margin: 0 2px;
+    }
+    .icon i{
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+}
