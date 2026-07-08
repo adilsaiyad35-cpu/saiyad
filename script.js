@@ -18,9 +18,18 @@ setInterval(() => {
     }, 500);
 
 }, 10000); // 10 seconds
-const menuToggle = document.getElementById('menuToggle');
+
+// Mobile menu toggle
+const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
-menuToggle.addEventListener('click', () => {
+menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
+});
+
+// Navbar link pe click karne se menu band ho jaye
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
 });
